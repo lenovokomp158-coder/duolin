@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugt VPN</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container app-container">
+    
+    <div id="page-1" class="page active">
+        <div class="card-wrapper">
+            <div class="card-header-ui">
+                <div class="header-left">
+                    <div class="header-icon bg-blue"><i class="fas fa-bolt"></i></div>
+                    <div>
+                        <div class="header-title">Shadowsocks</div>
+                        <div class="header-subtitle">High Speed Config</div>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v" style="color: #555; cursor: pointer;"></i>
+            </div>
+            
+            <div class="code-section">
+                <div class="copy-actions">
+                    <button class="btn-copy-style active" id="btn-ss-code" onclick="selectCodeType('ss-code')">ShadowSocks we Outline kody</button>
+                </div>
+                <div class="terminal-box" id="ss-code" onclick="copyThis('ss-code')">
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvRWxieklmVzZNMjNTYy1PdHpWZERR@198.105.115.93:8443#%F0%9F%87%B9%F0%9F%87%B2
+                </div>
+                <div class="status-note-box">
+                    <i class="fas fa-info-circle"></i> Kod her gün 07:00-da täzelener!
+                </div>
+            </div>
+
+            <div class="nav-footer">
+                <button class="btn-nav-main" disabled><i class="fas fa-arrow-left"></i></button>
+                <button class="btn-main-action" onclick="copyThis('ss-code')"><i class="fas fa-copy"></i> Göçür</button>
+                <button class="btn-nav-main" onclick="navigate(2)"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-2" class="page">
+        <div class="card-wrapper">
+            <div class="card-header-ui">
+                <div class="header-left">
+                    <div class="header-icon bg-green"><i class="fas fa-rocket"></i></div>
+                    <div>
+                        <div class="header-title">HAPP VPN</div>
+                        <div class="header-subtitle">Super Speed</div>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v" style="color: #555;"></i>
+            </div>
+            
+            <div class="code-section">
+                <div class="copy-actions">
+                    <button class="btn-copy-style active" id="btn-hp-code" onclick="selectCodeType('hp-code')">Android we iPhone üçin</button>
+                </div>
+                <div class="terminal-box" id="hp-code" onclick="copyThis('hp-code')">
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvRWxieklmVzZNMjNTYy1PdHpWZERR@198.105.115.93:8443#%F0%9F%87%B9%F0%9F%87%B2
+                </div>
+                <div class="status-note-box">
+                    <i class="fas fa-info-circle"></i> Kod öçen bolsa täzelener.
+                </div>
+            </div>
+
+            <div class="nav-footer">
+                <button class="btn-nav-main" onclick="navigate(1)"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn-main-action" onclick="copyThis('hp-code')"><i class="fas fa-copy"></i> Göçür</button>
+                <button class="btn-nav-main" onclick="navigate(3)"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-3" class="page">
+        <div class="card-wrapper">
+            <div class="card-header-ui">
+                <div class="header-left">
+                    <div class="header-icon" style="background: rgba(255, 193, 7, 0.2); color: #FFC107;"><i class="fas fa-gamepad"></i></div>
+                    <div>
+                        <div class="header-title">Igrawoy Kod</div>
+                        <div class="header-subtitle">Low Ping for Gaming</div>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v" style="color: #555;"></i>
+            </div>
+            
+            <div class="code-section">
+                <div class="copy-actions">
+                    <button class="btn-copy-style active" id="btn-game-code" onclick="selectCodeType('game-code')">Igrawoy HAPP VPN we ShadowSocks</button>
+                </div>
+                <div class="terminal-box" id="game-code" onclick="copyThis('game-code')">
+vless://game-config-tmserv-high-speed-low-ping@198.105.115.93:443?security=tls#Gaming
+                </div>
+                <div class="status-note-box">
+                    <i class="fas fa-info-circle"></i> Ping: 40ms - 70ms aralygy.
+                </div>
+            </div>
+
+            <div class="nav-footer">
+                <button class="btn-nav-main" onclick="navigate(2)"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn-main-action" onclick="copyThis('game-code')"><i class="fas fa-copy"></i> Göçür</button>
+                <button class="btn-nav-main" onclick="navigate(4)"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-4" class="page">
+        <div class="card-wrapper">
+            <div class="card-header-ui">
+                <div class="header-left">
+                    <div class="header-icon bg-purple"><i class="fas fa-user-circle"></i></div>
+                    <div>
+                        <div class="header-title">Admin</div>
+                        <div class="header-subtitle">24/7 Online</div>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-v" style="color: #555;"></i>
+            </div>
+            
+            <div class="code-section">
+                <div class="info-list">
+                    <div class="info-item" onclick="copyText('@b.bayry')">
+                        <div class="info-icon" style="color: #E1306C;"><i class="fab fa-instagram"></i></div>
+                        <div class="info-text">
+                            <h6>Instagram</h6>
+                            <p>Kopia edip alyñ</p>
+                        </div>
+                    </div>
+                    <div class="info-item" onclick="copyText('+99365123456')">
+                        <div class="info-icon" style="color: #25D366;"><i class="fab fa-whatsapp"></i></div>
+                        <div class="info-text">
+                            <h6>WhatsApp</h6>
+                            <p>+993 61626364</p>
+                        </div>
+                    </div>
+                    <div class="info-item" onclick="copyText('admin@vpn.tm')">
+                        <div class="info-icon" style="color: #ff9800;"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h6>Email Address</h6>
+                            <p>admin@vpn.tm</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon" style="color: #4CAF50;"><i class="fas fa-signal"></i></div>
+                        <div class="info-text">
+                            <h6>Server Status</h6>
+                            <p style="color: #4CAF50; font-weight: bold;">Active (Working)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-footer">
+                <button class="btn-nav-main" onclick="navigate(3)"><i class="fas fa-arrow-left"></i></button>
+                <button class="btn-main-action" onclick="copyText('+99365123456')"><i class="fas fa-phone"></i> Jañ etmek</button>
+                <button class="btn-nav-main" disabled><i class="fas fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="toast-box" class="toast-notification">
+    <i class="fas fa-check-circle" style="color: #00e676; font-size: 18px;"></i>
+    <span id="toast-text">Kod ýadyñyza göçürildi!</span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
